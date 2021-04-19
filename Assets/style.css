@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 1.6rem
+}
+
+textarea{
+    resize: none;
+}
+
+#container{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+}
+
+#left{
+    width: 200px;
+    background: #4c52c5;
+    color: white;
+}
+
+#right{
+    padding: 5rem;
+}
+
+#text{
+    padding: 1.5rem;
+}
+
+#text p{
+    margin: 5rem 0;
+}
+
+#messageAndInput{
+    overflow: auto;
+}
+
+#containerMessage{
+    overflow-wrap: break-word;
+}
+
+.containerMessage{
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#post{
+    margin: 1rem;
+}
+
+#alignRight{
+    justify-self: end;
+}
+
+#message{
+    width: 100%;
+}
+
+#logo{
+    width: 200px;
+    height: 100px;
+    background-image: url("img/logo.png");
+}
+
+.messagePost{
+    padding-left: 1rem;
+}
+
+.userPost{
+    font-size: 1.7rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.datePost{
+    font-size: 1rem;
+    text-align: right;
+}
+
+button{
+    padding: .5rem;
+    border-radius: .2rem;
+    background-color: #4c52c5;
+    color: white;
+    margin-left: 3rem;
+}
+
+#changeUsername, #createUser{
+    font-size: 1.6rem;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+textarea:focus{
+    border: 4px solid #4c52c5;
+}
