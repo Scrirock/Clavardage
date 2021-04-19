@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="Assets/purecookie.css"/>
     <title>Clavardage</title>
 </head>
 <body>
@@ -38,6 +39,7 @@
         </div>
     </div>
 
-<script src="Assets/app.js"></script>
+    <script src="Assets/purecookie.js"></script>
+    <script src="Assets/app.js"></script>
 </body>
 </html>

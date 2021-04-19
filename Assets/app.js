@@ -72,7 +72,6 @@ if(document.cookie.length > 0){
         let infos = cookies[i].split(regInfo);
         if(infos[0] === "username"){
             document.getElementById("divCreate").style.display = "none";
-            console.log("oui")
         }
     }
 }
