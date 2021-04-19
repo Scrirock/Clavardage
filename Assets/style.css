@@ -106,3 +106,20 @@ button{
 textarea:focus{
     border: 4px solid #4c52c5;
 }
+
+@media screen and (max-width: 750px) {
+    #left{
+        display: none;
+    }
+
+    #right{
+        order: -1;
+    }
+
+    #container{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+    }
+
+}
