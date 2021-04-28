@@ -21,14 +21,11 @@ setInterval(()=>{
 }, 1000);
 
 const form = document.querySelector('#post form');
-document.body.addEventListener('keypress', function(event) {
+document.body.addEventListener('keyup', function(event) {
     if (event.key === "Enter"){
         const message = form.querySelector('textarea[name="message"]').value;
 
         let xhrPost = new XMLHttpRequest();
-        xhrPost.onload = function () {
-            const response = JSON.parse(xhrPost.responseText);
-        }
 
         const messageData = {
             'message': message,
@@ -46,9 +43,6 @@ valid.addEventListener('click', function(event) {
     const username = document.querySelector('#changeUsername').value;
 
     let xhrUserChange = new XMLHttpRequest();
-    xhrUserChange.onload = function () {
-        const response = JSON.parse(xhrUserChange.responseText);
-    }
 
     const userChange = {
         'userChange': username,
@@ -81,9 +75,6 @@ create.addEventListener('click', function(event) {
     const username = document.querySelector('#createUser').value;
 
     let xhrUser = new XMLHttpRequest();
-    xhrUser.onload = function () {
-        const response = JSON.parse(xhrUser.responseText);
-    }
 
     const userData = {
         'user': username,
